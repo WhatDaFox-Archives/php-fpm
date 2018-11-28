@@ -3,7 +3,7 @@ MAINTAINER Valentin Prugnaud <valentin@whatdafox.com>
 
 WORKDIR /var/www/html
 
-RUN apk add zlib-dev libpng-dev
+RUN apk add zlib-dev libpng-dev libjpeg-turbo-dev freetype-dev
 
 RUN docker-php-ext-configure zip && docker-php-ext-install zip pdo_mysql bcmath gd
 
